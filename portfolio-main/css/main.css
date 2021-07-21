@@ -1,0 +1,39 @@
+*{
+    margin: 0em;
+}
+body {
+    font-size: 1.2em;
+}
+nav {
+    background-color: #58b1ec;
+    line-height: 3em;
+}
+
+nav a{
+    color: #fff;
+}
+header{
+    background-color:#67676d;
+}
+a{
+    text-decoration: none;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    margin-right: 0.9em;
+}
+footer a{
+    color: #fff;
+}
+
+footer{
+    background-color: #0d0418;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+}
