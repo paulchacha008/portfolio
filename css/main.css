@@ -1,39 +1,125 @@
-*{
-    margin: 0em;
+* {
+  margin: 0em;
 }
+
 body {
-    font-size: 1.2em;
-}
-nav {
-    background-color: #58b1ec;
-    line-height: 3em;
+  font-size: 1.2em;
 }
 
-nav a{
-    color: #fff;
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
-header{
-    background-color:#67676d;
-}
-a{
-    text-decoration: none;
-}
-footer ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-footer ul li{
-    margin-right: 0.9em;
-}
-footer a{
-    color: #fff;
+.container {
+  width: 90vw;
+  margin: auto;
 }
 
-footer{
-    background-color: #0d0418;
+.text-center {
+  text-align: center;
 }
-footer p{
-    color: #fff;
-    text-align: center;
+
+.navbar {
+  background-color: #1b9be6;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+  color: rgb(81, 112, 7);
+  margin-right: 0.5rem;
+}
+.jumbotron {
+  background-color: #b8b8ca;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  display: row;
+}
+.container-body{
+  background-color: #35c535;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  min-width: 300px;
+  min-height: 300px;
+
+  margin: 0.5rem;
+}
+
+.b {
+  border: 1px solid #070783;
+}
+
+.box-shadow {
+  box-shadow: 0 0 1rem 0 #060613;
+}
+
+.btn{
+  background-color: rgb(240, 12, 61);
+}
+
+footer {
+  background-color: #3111e7;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-right: 0.9em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+#navbar-icon {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  #navbar-icon {
+    display: inline-block;
+  }
 }
